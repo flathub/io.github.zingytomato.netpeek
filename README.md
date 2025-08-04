@@ -1,40 +1,51 @@
 # 🔎 NetPeek
 
-A modern network scanner for GNOME that helps you discover devices on your local network.
+A modern libadwaita-based network scanner for GNOME that helps you discover devices on your local network.
 
 ## 📷 Screenshots
 
 
-![Home Page](https://raw.githubusercontent.com/ZingyTomato/NetPeek/refs/heads/master/data/screenshots/1.png)
+![Home Page](https://github.com/ZingyTomato/NetPeek/blob/master/data/screenshots/1.png?raw=true)
 
-![Results Page](https://raw.githubusercontent.com/ZingyTomato/NetPeek/refs/heads/master/data/screenshots/2.png)
+![Results Page](https://github.com/ZingyTomato/NetPeek/blob/master/data/screenshots/2.png?raw=true)
+
+![No Devices Found](https://github.com/ZingyTomato/NetPeek/blob/master/data/screenshots/3.png?raw=true)
 
 ## ⭐ Features
 
 - 🔍 **Fast Network Scanning** - Discover active devices on your network
-- 🏠 **Smart Auto-Detection** - Automatically detects your network range
 - 🎯 **Port Scanning** - Shows open ports on discovered devices
 - 📱 **Modern UI** - Built with GTK4 and Libadwaita
 - ⚡ **Multi-threaded** - Fast concurrent scanning
 - 🔧 **Flexible Input** - Supports CIDR notation, IP ranges, and single IPs
 
-## 🔨 Installation
+## 🔧 Installation
 
-### Manual Build
+### 👍 Flathub (Recommended)
+<a href='https://flathub.org/apps/io.github.zingytomato.netpeek'>
+    <img width='240' alt='Get it on Flathub' src='https://flathub.org/api/badge?svg&locale=en'/>
+</a>
 
-```bash
-git clone https://github.com/zingytomato/netpeek.git
-cd netpeek
-meson setup build
-meson compile -C build
-meson install -C build
+Or install via the command line:
+```sh
+flatpak install flathub io.github.zingytomato.netpeek
 ```
+
+### 👨🏻‍🔧 Unofficial Community Packages
+* Arch Linux (AUR) - [netpeek](https://aur.archlinux.org/packages/netpeek)
+* Arch Linux (AUR) - [netpeek-git](https://aur.archlinux.org/packages/netpeek-git)
+
+## 🔨 Local Development
 
 ### GNOME Builder
 
-1. Clone the repository
-2. Open the project folder in GNOME Builder
-3. Click the "Run Project" button
+GNOME Builder is the environment used for developing this application.
+It can use Flatpak manifests to create a consistent building and running
+environment cross-distro. Thus, it is highly recommended you use it.
+
+1. Download GNOME Builder.
+2. In Builder, click the "Clone Repository" button at the bottom, using https://github.com/zingytomato/netpeek.git as the URL.
+3. Click the build button at the top once the project is loaded.
 
 ### Supported Formats
 
@@ -46,15 +57,21 @@ meson install -C build
 
 ### Python Dependencies
 
-All dependencies are included in the Python standard library:
 - `socket` - Network operations
 - `ipaddress` - IP address validation
 - `threading` - Concurrent scanning
-- `subprocess` - Network detection
+- `ping3` - Ping active hosts
+
+## 🙌 Help translate!
+
+Translations to your native language are very much appreciated.
+Currently supported languages:
+* Dutch
+* Russian
 
 ## 📙 License
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](https://github.com/ZingyTomato/NetPeek/blob/master/LICENSE) file for details.
 
 ## ❓ Support
 
