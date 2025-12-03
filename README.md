@@ -2,6 +2,16 @@
 
 A modern libadwaita-based network scanner for GNOME that helps you discover devices on your local network.
 
+## 📖 Table Of Contents
+
+* [`📷 Screenshots`](#-screenshots)
+* [`⭐ Features`](#-features)
+* [`🔧 Installation`](#-installation)
+* [`🔨 Local Development`](#-local-development)
+* [`👨🏻‍💻 Requirements`](#-requirements)
+* [`🙌 Help translate!`](#-help-translate!)
+* [`❓ Support`](#-support)
+
 ## 📷 Screenshots
 
 
@@ -10,6 +20,8 @@ A modern libadwaita-based network scanner for GNOME that helps you discover devi
 ![Results Page](https://github.com/ZingyTomato/NetPeek/blob/master/data/screenshots/2.png?raw=true)
 
 ![No Devices Found](https://github.com/ZingyTomato/NetPeek/blob/master/data/screenshots/3.png?raw=true)
+
+![List View](https://github.com/ZingyTomato/NetPeek/blob/master/data/screenshots/4.png?raw=true)
 
 ## ⭐ Features
 
@@ -33,8 +45,8 @@ flatpak install flathub io.github.zingytomato.netpeek
 ```
 
 ### 👨🏻‍🔧 Unofficial Community Packages
-* Arch Linux (AUR) - [netpeek](https://aur.archlinux.org/packages/netpeek)
-* Arch Linux (AUR) - [netpeek-git](https://aur.archlinux.org/packages/netpeek-git)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/netpeek.svg)](https://repology.org/project/netpeek/versions)
 
 ## 🔨 Local Development
 
@@ -54,14 +66,14 @@ environment cross-distro. Thus, it is highly recommended you use it.
 - **Range**: `192.168.1.1-254`, `10.0.0.1-50`
 - **Single IP**: `192.168.1.1`
 
-## 👨🏻‍💻 Development
+## 👨🏻‍💻 Requirements
 
 ### Python Dependencies
 
 - `socket` - Network operations
 - `ipaddress` - IP address validation
 - `threading` - Concurrent scanning
-- `ping3` - Ping active hosts
+- `python-nmap` - Find active hosts using nmap
 
 ## 🙌 Help translate!
 
@@ -70,6 +82,11 @@ Currently supported languages:
 * Dutch
 * Russian
 * Spanish
+* Italian
+* French
+* Polish
+* Ukranian
+* Slovakian
 
 ## 📙 License
 
