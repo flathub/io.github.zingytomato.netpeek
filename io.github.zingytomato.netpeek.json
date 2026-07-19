@@ -48,8 +48,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zingytomato/NetPeek.git",
-                    "commit": "1142ca3d98cb5df40b8e6c48590ce69b437ef939",
-                    "tag": "v0.2.8"
+                    "commit": "b15545a7fc3d2cef9f00dc39f66e274b7fa9f49b",
+                    "tag": "v0.2.9"
                 }
             ]
         }
